@@ -1,0 +1,21 @@
+html {
+    height: 100%;
+    width: 100%;
+    background: radial-gradient( red,orange,yellow);
+    color:purple;
+    text-align: center;
+  }
+  h1 {
+    color:blue;
+    font-size: 60px;
+    text-align: center;
+  }
+  img{
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+  }
+  ul{
+    list-style-position: inside;
+    text-align: center;
+  }
