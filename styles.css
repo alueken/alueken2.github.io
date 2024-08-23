@@ -1,21 +1,77 @@
-html {
-    height: 100%;
-    width: 100%;
-    background: radial-gradient( red,orange,yellow);
-    color:purple;
-    text-align: center;
-  }
-  h1 {
-    color:blue;
-    font-size: 60px;
-    text-align: center;
-  }
-  img{
-    margin: auto;
-    display: block;
-    border-radius: 50%;
-  }
-  ul{
-    list-style-position: inside;
-    text-align: center;
-  }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #6a0dad; /* Purple */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+audio {
+  margin: 10px 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.app {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app img {
+  width: 100%;
+  height: auto;
+}
+
+.reviews {
+  background-color: #e0b0ff; /* Light Magenta */
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.reviews h3 {
+  margin-top: 0;
+}
+
+a {
+  color: #6a0dad;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #6a0dad; /* Purple */
+  color: white;
+}
