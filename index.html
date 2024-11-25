@@ -1,14 +1,157 @@
-<header>
-  <h1>Mr. Lueken's iOS App Portfolio</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="learn-to-code1.html">Learn to Code 1</a></li>
-    </ul>
-  </nav>
-  <!-- Autoplaying audio -->
-  <audio id="introAudio" controls>
-    <source src="luekenRap.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mr. Lueken's iOS App Portfolio">
+  <title>Mr. Lueken's iOS App Portfolio</title>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <style>
+    /* Adding cool animation effects for interactive learning */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      transition: all 0.3s ease;
+    }
+
+    header {
+      background-color: #3a74a1;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    header nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    header nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header nav ul li a:hover {
+      color: #f9d342;
+      transform: scale(1.1);
+      transition: transform 0.3s ease;
+    }
+
+    .hero {
+      background-image: url('assets/hero-banner.jpg');
+      background-size: cover;
+      height: 400px;
+      text-align: center;
+      color: white;
+      padding-top: 100px;
+      font-size: 2.5rem;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .hero h2 {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .section {
+      padding: 20px;
+      margin: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .media img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .media video {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #3a74a1;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* For animation */
+    .fade-in {
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Mr. Lueken's iOS App Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="final-project.html">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero fade-in">
+    <h2>Learn iOS App Development with Fun Projects!</h2>
+  </section>
+
+  <main>
+    <section class="section fade-in">
+      <h2>What is iOS App Development?</h2>
+      <p>In this portfolio, you'll explore how to create apps for Apple's iPhone and iPad using Swift and Xcode. We’ll teach you key concepts like building user interfaces, handling data, and integrating features like cameras and GPS.</p>
+    </section>
+
+    <section class="section fade-in">
+      <h2>Key Skills You'll Learn</h2>
+      <ul>
+        <li>Swift programming language</li>
+        <li>Building interactive UIs using SwiftUI</li>
+        <li>Managing app data with Core Data</li>
+        <li>Publishing apps to the App Store</li>
+        <li>Using the iOS Simulator and real devices for testing</li>
+      </ul>
+    </section>
+
+    <section class="section fade-in">
+      <h2>Media Examples</h2>
+      <div class="media">
+        <img src="assets/ios-app-example.jpg" alt="Sample iOS app screenshot">
+        <video controls>
+          <source src="assets/app-demo.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Mr. Lueken. All rights reserved.</p>
+  
