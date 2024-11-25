@@ -126,6 +126,27 @@
         opacity: 1;
       }
     }
+
+    /* Custom button style */
+    .audio-controls {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .audio-controls button {
+      background-color: #3a74a1;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      margin: 5px;
+    }
+
+    .audio-controls button:hover {
+      background-color: #f9d342;
+    }
   </style>
 </head>
 
@@ -165,9 +186,18 @@
       <h2>Media Examples</h2>
       <div class="media">
         <img src="luekenPic.jpg" alt="Sample iOS app screenshot">
-        <audio controls>
+        <audio id="audioPlayer" autoplay>
           <source src="luekenRap.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
         </audio>
+      </div>
+
+      <!-- Audio Control Buttons -->
+      <div class="audio-controls">
+        <button onclick="toggleAudio()">Pause / Play</button>
+        <button onclick="changeSpeed(0.5)">Slow Down</button>
+        <button onclick="changeSpeed(1.5)">Speed Up</button>
+        <button onclick="changeSpeed(1)">Normal Speed</button>
       </div>
     </section>
   </main>
@@ -176,7 +206,23 @@
     <p>© 2024 Mr. Lueken. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    const audioPlayer = document.getElementById('audioPlayer');
+
+    // Function to toggle play and pause
+    function toggleAudio() {
+      if (audioPlayer.paused) {
+        audioPlayer.play();
+      } else {
+        audioPlayer.pause();
+      }
+    }
+
+    // Function to change audio playback speed
+    function changeSpeed(speed) {
+      audioPlayer.playbackRate = speed;
+    }
+  </script>
 </body>
 
 </html>
